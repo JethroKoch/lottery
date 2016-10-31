@@ -19,7 +19,7 @@ public class lottery{
         Arrays.sort(number);
         Arrays.sort(input);
         for(int c = 0; c < 6; c++){
-            if(Arrays.equals(number[c], input[c])){
+            if((number[c] == input[c])){
                 compare ++;
             }
         }
@@ -31,8 +31,8 @@ public class lottery{
                 System.out.println("You win £100");
                 break;
             case 5 :
-                if(bonus.equals(inputbon)){
-                        system.out.println("you won £100,000");
+                if(bonus == inputbon){
+                        System.out.println("you won £100,000");
                     }
                     else{
                         System.out.println("You won £10,000");
@@ -47,4 +47,3 @@ public class lottery{
             }
         }
     }
-        
